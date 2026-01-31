@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import ChildrensLibrary from "@/components/ChildrensLibrary";
+import LiteraryWorks from "@/components/LiteraryWorks";
 import Footer from "@/components/Footer";
 import watercolorBg from "@/assets/watercolor-background.jpeg";
 
@@ -14,6 +15,7 @@ const Index = () => {
       <main>
         <HeroSection />
         <ChildrensLibrary />
+        <LiteraryWorks />
       </main>
       <Footer />
     </div>

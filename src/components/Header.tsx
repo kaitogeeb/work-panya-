@@ -16,9 +16,10 @@ const Header = () => {
       </Link>
       
       <nav className="hidden md:flex items-center gap-8">
-        <Link to="/" className="nav-link">Home</Link>
+        <a href="/#books" className="nav-link">Books</a>
+        <a href="/#childrens-library" className="nav-link">Children's Library</a>
         <Link to="/about" className="nav-link">About</Link>
-        <a href="#books" className="nav-link">Books</a>
+        <Link to="/gallery" className="nav-link">Gallery</Link>
       </nav>
 
       {/* Mobile menu button */}
