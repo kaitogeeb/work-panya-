@@ -1,9 +1,10 @@
+import { Link } from "react-router-dom";
 import logo from "@/assets/logo.jpeg";
 
 const Header = () => {
   return (
-    <header className="w-full py-4 px-6 md:px-12 flex items-center justify-between bg-transparent absolute top-0 left-0 right-0 z-10">
-      <div className="flex items-center gap-3">
+    <header className="w-full py-3 px-6 md:px-12 flex items-center justify-between bg-white shadow-sm sticky top-0 z-50">
+      <Link to="/" className="flex items-center gap-3">
         <img 
           src={logo} 
           alt="Panya's World Press Logo" 
@@ -12,13 +13,12 @@ const Header = () => {
         <span className="font-serif text-lg md:text-xl font-semibold text-sepia">
           Panya's World Press
         </span>
-      </div>
+      </Link>
       
       <nav className="hidden md:flex items-center gap-8">
+        <Link to="/" className="nav-link">Home</Link>
+        <Link to="/about" className="nav-link">About</Link>
         <a href="#books" className="nav-link">Books</a>
-        <a href="#children" className="nav-link">Children's Library</a>
-        <a href="#about" className="nav-link">About</a>
-        <a href="#press" className="nav-link">Press</a>
       </nav>
 
       {/* Mobile menu button */}
