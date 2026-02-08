@@ -4,11 +4,13 @@ import watercolorBg from "@/assets/watercolor-background.jpeg";
 
 // Book Covers
 import bookQuietTales from "@/assets/book-quiet-tales.jpeg";
+import bookQuietCourage from "@/assets/book-quiet-courage.jpeg";
 import bookQuietLawForest from "@/assets/book-quiet-law-forest.jpeg";
 import bookHiddenSeasons from "@/assets/book-hidden-seasons.jpeg";
 
 const galleryItems = [
   { src: bookQuietTales, title: "The Quiet Tales of Panya", alt: "The Quiet Tales of Panya Book Cover" },
+  { src: bookQuietCourage, title: "The Quiet Courage of Panya", alt: "The Quiet Courage of Panya Book Cover" },
   { src: bookQuietLawForest, title: "The Quiet Law of the Forest", alt: "The Quiet Law of the Forest Book Cover" },
   { src: bookHiddenSeasons, title: "The Hidden Seasons of Panya", alt: "The Hidden Seasons of Panya Book Cover" },
 ];
