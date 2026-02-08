@@ -1,5 +1,6 @@
 import BookCard from "./BookCard";
 import bookHiddenSeasons from "@/assets/book-hidden-seasons.jpeg";
+import bookQuietLawForest from "@/assets/book-quiet-law-forest.jpeg";
 
 const LiteraryWorks = () => {
   return (
@@ -15,12 +16,18 @@ const LiteraryWorks = () => {
           </p>
         </div>
 
-        {/* Books Grid - 1 book */}
         <div className="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-16 mb-12">
           <BookCard 
             image={bookHiddenSeasons}
             size="large"
             title="The Hidden Seasons of Panya"
+            author="Suichi Makion"
+            overlayText={true}
+          />
+          <BookCard 
+            image={bookQuietLawForest}
+            size="large"
+            title="The Quiet Law of the Forest"
             author="Suichi Makion"
             overlayText={true}
           />
