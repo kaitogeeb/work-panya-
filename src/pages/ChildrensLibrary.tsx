@@ -79,9 +79,6 @@ const ChildrensLibraryPage = () => {
                     )}
                   </div>
                   <div className="sm:w-3/5 p-6 flex flex-col justify-center">
-                    <span className="text-xs font-semibold uppercase tracking-wider mb-2" style={{ color: 'hsl(var(--teal-dark))' }}>
-                      {book.age}
-                    </span>
                     <h2 className="font-serif text-xl md:text-2xl font-medium text-sepia mb-3">
                       {book.title}
                     </h2>

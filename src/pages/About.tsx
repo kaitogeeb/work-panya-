@@ -4,6 +4,7 @@ import watercolorBg from "@/assets/watercolor-background.jpeg";
 import bookHiddenSeasons from "@/assets/book-hidden-seasons.jpeg";
 import bookQuietLawForest from "@/assets/book-quiet-law-forest.jpeg";
 import bookQuietTales from "@/assets/book-quiet-tales.jpeg";
+import bookQuietCourage from "@/assets/book-quiet-courage.jpeg";
 
 const About = () => {
   return (
@@ -30,6 +31,22 @@ const About = () => {
               <img 
                 src={bookHiddenSeasons} 
                 alt="Panya illustration" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+
+          <p className="text-sepia text-lg leading-relaxed mb-8 font-serif italic">
+            The Quiet Courage of Panya is a tender tale about finding bravery in small, everyday acts — 
+            standing up with kindness, listening with heart, and discovering strength in gentleness. 
+            It reminds readers that courage doesn’t roar; it grows quietly from compassion, patience, and care.
+          </p>
+
+          <div className="flex justify-center mb-8">
+            <div className="w-40 h-40 rounded-full overflow-hidden shadow-lg">
+              <img 
+                src={bookQuietCourage} 
+                alt="The Quiet Courage of Panya" 
                 className="w-full h-full object-cover"
               />
             </div>
