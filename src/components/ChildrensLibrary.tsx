@@ -1,6 +1,9 @@
+import { Link } from "react-router-dom";
 import BookCard from "./BookCard";
 import bookQuietTales from "@/assets/book-quiet-tales.jpeg";
 import bookQuietCourage from "@/assets/book-quiet-courage.jpeg";
+import bookHiddenSeasons from "@/assets/book-hidden-seasons.jpeg";
+import bookQuietLawForest from "@/assets/book-quiet-law-forest.jpeg";
 
 const ChildrensLibrary = () => {
   return (
@@ -15,7 +18,7 @@ const ChildrensLibrary = () => {
           </p>
         </div>
 
-        <div className="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-16 mb-12">
+        <div className="grid grid-cols-2 md:grid-cols-4 items-center justify-center gap-8 md:gap-10 mb-12">
           <BookCard 
             image={bookQuietTales}
             size="large"
@@ -31,12 +34,26 @@ const ChildrensLibrary = () => {
             isNewRelease={true}
             overlayText={true}
           />
+          <BookCard 
+            image={bookHiddenSeasons}
+            size="large"
+            title="The Hidden Seasons of Panya"
+            author="Suichi Makion"
+            overlayText={true}
+          />
+          <BookCard 
+            image={bookQuietLawForest}
+            size="large"
+            title="The Quiet Law of the Forest"
+            author="Suichi Makion"
+            overlayText={true}
+          />
         </div>
         
         <div className="text-center">
-             <button className="btn-primary-teal">
-                Explore Children's Books &gt;
-             </button>
+          <Link to="/childrens-library" className="btn-primary-teal inline-block">
+            Explore Children's Books &gt;
+          </Link>
         </div>
       </div>
     </section>

@@ -1,12 +1,7 @@
-import BookCard from "./BookCard";
-import bookHiddenSeasons from "@/assets/book-hidden-seasons.jpeg";
-import bookQuietLawForest from "@/assets/book-quiet-law-forest.jpeg";
-
 const LiteraryWorks = () => {
   return (
     <section className="py-16 px-6 md:px-12 border-t border-sepia/20">
       <div className="max-w-5xl mx-auto">
-        {/* Section Header */}
         <div className="text-center mb-12">
           <h2 className="font-serif text-3xl md:text-4xl font-medium text-sepia mb-3">
             Literary & Reflective Works
@@ -16,27 +11,16 @@ const LiteraryWorks = () => {
           </p>
         </div>
 
-        <div className="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-16 mb-12">
-          <BookCard 
-            image={bookHiddenSeasons}
-            size="large"
-            title="The Hidden Seasons of Panya"
-            author="Suichi Makion"
-            overlayText={true}
-          />
-          <BookCard 
-            image={bookQuietLawForest}
-            size="large"
-            title="The Quiet Law of the Forest"
-            author="Suichi Makion"
-            overlayText={true}
-          />
+        <div className="flex flex-col items-center justify-center py-16 mb-12">
+          <p className="text-sepia-light text-lg font-serif italic text-center">
+            New titles coming soon...
+          </p>
         </div>
 
         <div className="text-center">
-             <button className="btn-primary-teal">
-                View Literary Titles &gt;
-             </button>
+          <button className="btn-primary-teal">
+            View Literary Titles &gt;
+          </button>
         </div>
       </div>
     </section>
