@@ -9,9 +9,9 @@ const HeroSection = () => {
           and quiet curiosity
         </h1>
         
-        <button className="btn-primary-teal mt-8">
+        <a href="/childrens-library" className="btn-primary-teal mt-8">
           Explore Our Books
-        </button>
+        </a>
       </div>
     </section>
   );

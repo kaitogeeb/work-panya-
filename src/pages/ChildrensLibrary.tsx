@@ -13,6 +13,7 @@ const books = [
     title: "The Quiet Tales of Panya",
     description: "Follow Panya on gentle adventures through meadows and forests, discovering the magic in everyday moments.",
     age: "Ages 4–8",
+    buyUrl: "https://www.amazon.com.au/dp/0645596213?ref_=cm_sw_r_ffobk_cp_ud_dp_M31E4WC3JHSHFY4FGEN5",
   },
   {
     image: bookQuietCourage,
@@ -26,12 +27,14 @@ const books = [
     title: "The Hidden Seasons of Panya",
     description: "Through each changing season, Panya uncovers hidden wonders that only a patient eye can see.",
     age: "Ages 5–9",
+    buyUrl: "https://www.amazon.com.au/dp/B0G5PCMPFB?ref=cm_sw_r_ffobk_cp_ud_dp_38XD4XWZ0H3RV83DMGKY&ref_=cm_sw_r_ffobk_cp_ud_dp_38XD4XWZ0H3RV83DMGKY&social_share=cm_sw_r_ffobk_cp_ud_dp_38XD4XWZ0H3RV83DMGKY&bestFormat=true",
   },
   {
     image: bookQuietLawForest,
     title: "The Quiet Law of the Forest",
     description: "A reflective journey into the forest where Panya learns the ancient, unspoken rules of nature.",
     age: "Ages 6–10",
+    buyUrl: "https://www.amazon.com.au/dp/B0G49HNKDP?ref=cm_sw_r_ffobk_cp_ud_dp_RM8JM1R19DGYY8W2ENXR&ref_=cm_sw_r_ffobk_cp_ud_dp_RM8JM1R19DGYY8W2ENXR&social_share=cm_sw_r_ffobk_cp_ud_dp_RM8JM1R19DGYY8W2ENXR&bestFormat=true",
   },
 ];
 
@@ -74,7 +77,7 @@ const ChildrensLibraryPage = () => {
                     />
                     {book.isNew && (
                       <span className="badge-new-release absolute top-3 right-3">
-                        New Release
+                        Coming Soon
                       </span>
                     )}
                   </div>
@@ -88,6 +91,17 @@ const ChildrensLibraryPage = () => {
                     <p className="text-sepia-light text-xs italic">
                       By Suichi Makion
                     </p>
+                    {book.buyUrl && (
+                      <a
+                        href={book.buyUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mt-3 inline-block text-sm font-medium underline"
+                        style={{ color: "hsl(var(--teal-dark))" }}
+                      >
+                        Buy {book.title} here
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>

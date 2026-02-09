@@ -25,6 +25,7 @@ const ChildrensLibrary = () => {
             title="The Quiet Tales of Panya"
             author="Suichi Makion"
             overlayText={true}
+            buyUrl="https://www.amazon.com.au/dp/0645596213?ref_=cm_sw_r_ffobk_cp_ud_dp_M31E4WC3JHSHFY4FGEN5"
           />
           <BookCard 
             image={bookQuietCourage}
@@ -40,6 +41,7 @@ const ChildrensLibrary = () => {
             title="The Hidden Seasons of Panya"
             author="Suichi Makion"
             overlayText={true}
+            buyUrl="https://www.amazon.com.au/dp/B0G5PCMPFB?ref=cm_sw_r_ffobk_cp_ud_dp_38XD4XWZ0H3RV83DMGKY&ref_=cm_sw_r_ffobk_cp_ud_dp_38XD4XWZ0H3RV83DMGKY&social_share=cm_sw_r_ffobk_cp_ud_dp_38XD4XWZ0H3RV83DMGKY&bestFormat=true"
           />
           <BookCard 
             image={bookQuietLawForest}
@@ -47,6 +49,7 @@ const ChildrensLibrary = () => {
             title="The Quiet Law of the Forest"
             author="Suichi Makion"
             overlayText={true}
+            buyUrl="https://www.amazon.com.au/dp/B0G49HNKDP?ref=cm_sw_r_ffobk_cp_ud_dp_RM8JM1R19DGYY8W2ENXR&ref_=cm_sw_r_ffobk_cp_ud_dp_RM8JM1R19DGYY8W2ENXR&social_share=cm_sw_r_ffobk_cp_ud_dp_RM8JM1R19DGYY8W2ENXR&bestFormat=true"
           />
         </div>
         

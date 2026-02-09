@@ -5,6 +5,7 @@ interface BookCardProps {
   isNewRelease?: boolean;
   size?: "large" | "small";
   overlayText?: boolean;
+  buyUrl?: string;
 }
 
 const BookCard = ({ 
@@ -13,7 +14,8 @@ const BookCard = ({
   author, 
   isNewRelease = false, 
   size = "large",
-  overlayText = false 
+  overlayText = false,
+  buyUrl
 }: BookCardProps) => {
   const sizeClasses = size === "large" 
     ? "w-full max-w-[280px]" 
@@ -23,7 +25,7 @@ const BookCard = ({
     <div className={`book-card relative ${sizeClasses}`}>
       {isNewRelease && (
         <span className="badge-new-release absolute top-3 right-3 z-10">
-          New Release
+          Coming Soon
         </span>
       )}
       
@@ -52,6 +54,17 @@ const BookCard = ({
           </div>
         )}
       </div>
+      {buyUrl && title && (
+        <a
+          href={buyUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-3 block text-center text-sm font-medium underline"
+          style={{ color: "hsl(var(--teal-dark))" }}
+        >
+          Buy {title} here
+        </a>
+      )}
     </div>
   );
 };

@@ -9,9 +9,9 @@ import bookQuietLawForest from "@/assets/book-quiet-law-forest.jpeg";
 import bookHiddenSeasons from "@/assets/book-hidden-seasons.jpeg";
 
 const galleryItems = [
-  { src: bookQuietTales, title: "The Quiet Tales of Panya", alt: "The Quiet Tales of Panya Book Cover" },
-  { src: bookQuietLawForest, title: "The Quiet Law of the Forest", alt: "The Quiet Law of the Forest Book Cover" },
-  { src: bookHiddenSeasons, title: "The Hidden Seasons of Panya", alt: "The Hidden Seasons of Panya Book Cover" },
+  { src: bookQuietTales, title: "The Quiet Tales of Panya", alt: "The Quiet Tales of Panya Book Cover", buyUrl: "https://www.amazon.com.au/dp/0645596213?ref_=cm_sw_r_ffobk_cp_ud_dp_M31E4WC3JHSHFY4FGEN5" },
+  { src: bookQuietLawForest, title: "The Quiet Law of the Forest", alt: "The Quiet Law of the Forest Book Cover", buyUrl: "https://www.amazon.com.au/dp/B0G49HNKDP?ref=cm_sw_r_ffobk_cp_ud_dp_RM8JM1R19DGYY8W2ENXR&ref_=cm_sw_r_ffobk_cp_ud_dp_RM8JM1R19DGYY8W2ENXR&social_share=cm_sw_r_ffobk_cp_ud_dp_RM8JM1R19DGYY8W2ENXR&bestFormat=true" },
+  { src: bookHiddenSeasons, title: "The Hidden Seasons of Panya", alt: "The Hidden Seasons of Panya Book Cover", buyUrl: "https://www.amazon.com.au/dp/B0G5PCMPFB?ref=cm_sw_r_ffobk_cp_ud_dp_38XD4XWZ0H3RV83DMGKY&ref_=cm_sw_r_ffobk_cp_ud_dp_38XD4XWZ0H3RV83DMGKY&social_share=cm_sw_r_ffobk_cp_ud_dp_38XD4XWZ0H3RV83DMGKY&bestFormat=true" },
   { src: bookQuietCourage, title: "The Quiet Courage of Panya", alt: "The Quiet Courage of Panya Book Cover" },
 ];
 
@@ -34,20 +34,40 @@ const Gallery = () => {
           </div>
 
           <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
-            {galleryItems.map((item, index) => (
-              <div key={index} className="break-inside-avoid relative group rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <img 
-                  src={item.src} 
-                  alt={item.alt} 
-                  className="w-full h-auto object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-90 flex items-end justify-center pb-6 px-4">
-                  <p className="text-white font-serif text-lg text-center font-medium drop-shadow-md">
-                    {item.title}
-                  </p>
+            {galleryItems.map((item, index) => {
+              const content = (
+                <>
+                  <img 
+                    src={item.src} 
+                    alt={item.alt} 
+                    className="w-full h-auto object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-90 flex items-end justify-center pb-6 px-4">
+                    <p className="text-white font-serif text-lg text-center font-medium drop-shadow-md">
+                      {item.title}
+                    </p>
+                  </div>
+                </>
+              );
+              return item.buyUrl ? (
+                <a
+                  key={index}
+                  href={item.buyUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="break-inside-avoid relative group rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
+                >
+                  {content}
+                </a>
+              ) : (
+                <div
+                  key={index}
+                  className="break-inside-avoid relative group rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
+                >
+                  {content}
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </main>

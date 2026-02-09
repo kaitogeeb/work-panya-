@@ -18,9 +18,9 @@ const LiteraryWorks = () => {
         </div>
 
         <div className="text-center">
-          <button className="btn-primary-teal">
+          <a href="/childrens-library" className="btn-primary-teal">
             View Literary Titles &gt;
-          </button>
+          </a>
         </div>
       </div>
     </section>
