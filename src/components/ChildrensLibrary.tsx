@@ -3,7 +3,7 @@ import BookCard from "./BookCard";
 import bookQuietTales from "@/assets/book-quiet-tales.jpeg";
 import bookQuietCourage from "@/assets/book-quiet-courage.jpeg";
 import bookHiddenSeasons from "@/assets/book-hidden-seasons.jpeg";
-import bookQuietLawForest from "@/assets/book-quiet-law-forest.jpeg";
+import bookQuietLawForestNew from "@/components/WhatsApp Image 2026-02-17 at 2.48.22 PM.jpeg";
 
 const ChildrensLibrary = () => {
   return (
@@ -43,21 +43,23 @@ const ChildrensLibrary = () => {
             overlayText={true}
             buyUrl="https://a.co/d/0dUARKQP"
           />
+          
           <BookCard 
-            image={bookQuietLawForest}
+            image={bookQuietLawForestNew}
             size="large"
             title="The Quiet Law of the Forest"
             author="Suichi Makion"
             overlayText={true}
             buyUrl="https://a.co/d/0eBRDlcV"
           />
+
         </div>
         
         <div className="text-center">
           <Link to="/childrens-library" className="btn-primary-teal inline-block">
             Explore Children's Books &gt;
           </Link>
-        </div>
+      </div>
       </div>
     </section>
   );

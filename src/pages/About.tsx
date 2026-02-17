@@ -2,9 +2,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import watercolorBg from "@/assets/watercolor-background.jpeg";
 import bookHiddenSeasons from "@/assets/book-hidden-seasons.jpeg";
-import bookQuietLawForest from "@/assets/book-quiet-law-forest.jpeg";
 import bookQuietTales from "@/assets/book-quiet-tales.jpeg";
 import bookQuietCourage from "@/assets/book-quiet-courage.jpeg";
+import bookQuietLawForestNew from "@/components/WhatsApp Image 2026-02-17 at 2.48.22 PM.jpeg";
 
 const About = () => {
   return (
@@ -63,8 +63,8 @@ const About = () => {
           <div className="flex justify-center mb-8">
             <div className="w-40 h-40 rounded-full overflow-hidden shadow-lg">
               <img 
-                src={bookQuietLawForest} 
-                alt="Panya illustration" 
+                src={bookQuietLawForestNew} 
+                alt="The Quiet Law of the Forest" 
                 className="w-full h-full object-cover"
               />
             </div>

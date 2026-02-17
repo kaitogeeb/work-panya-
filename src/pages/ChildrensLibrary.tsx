@@ -5,7 +5,7 @@ import watercolorBg from "@/assets/watercolor-background.jpeg";
 import bookQuietTales from "@/assets/book-quiet-tales.jpeg";
 import bookQuietCourage from "@/assets/book-quiet-courage.jpeg";
 import bookHiddenSeasons from "@/assets/book-hidden-seasons.jpeg";
-import bookQuietLawForest from "@/assets/book-quiet-law-forest.jpeg";
+import bookQuietLawForestNew from "@/components/WhatsApp Image 2026-02-17 at 2.48.22 PM.jpeg";
 
 const books = [
   {
@@ -30,7 +30,7 @@ const books = [
     buyUrl: "https://a.co/d/0dUARKQP",
   },
   {
-    image: bookQuietLawForest,
+    image: bookQuietLawForestNew,
     title: "The Quiet Law of the Forest",
     description: "A reflective journey into the forest where Panya learns the ancient, unspoken rules of nature.",
     age: "Ages 6–10",

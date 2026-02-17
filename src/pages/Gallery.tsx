@@ -5,12 +5,12 @@ import watercolorBg from "@/assets/watercolor-background.jpeg";
 // Book Covers
 import bookQuietTales from "@/assets/book-quiet-tales.jpeg";
 import bookQuietCourage from "@/assets/book-quiet-courage.jpeg";
-import bookQuietLawForest from "@/assets/book-quiet-law-forest.jpeg";
 import bookHiddenSeasons from "@/assets/book-hidden-seasons.jpeg";
+import bookQuietLawForestNew from "@/components/WhatsApp Image 2026-02-17 at 2.48.22 PM.jpeg";
 
 const galleryItems = [
   { src: bookQuietTales, title: "The Quiet Tales of Panya", alt: "The Quiet Tales of Panya Book Cover", buyUrl: "https://a.co/d/06jxg6Em" },
-  { src: bookQuietLawForest, title: "The Quiet Law of the Forest", alt: "The Quiet Law of the Forest Book Cover", buyUrl: "https://a.co/d/0eBRDlcV" },
+  { src: bookQuietLawForestNew, title: "The Quiet Law of the Forest", alt: "The Quiet Law of the Forest Book Cover", buyUrl: "https://a.co/d/0eBRDlcV" },
   { src: bookHiddenSeasons, title: "The Hidden Seasons of Panya", alt: "The Hidden Seasons of Panya Book Cover", buyUrl: "https://a.co/d/0dUARKQP" },
   { src: bookQuietCourage, title: "The Quiet Courage of Panya", alt: "The Quiet Courage of Panya Book Cover", buyUrl: "https://a.co/d/07hopgU0" },
 ];
