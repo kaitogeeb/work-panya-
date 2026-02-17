@@ -9,10 +9,10 @@ import bookQuietLawForest from "@/assets/book-quiet-law-forest.jpeg";
 import bookHiddenSeasons from "@/assets/book-hidden-seasons.jpeg";
 
 const galleryItems = [
-  { src: bookQuietTales, title: "The Quiet Tales of Panya", alt: "The Quiet Tales of Panya Book Cover", buyUrl: "https://www.amazon.com.au/dp/0645596213?ref_=cm_sw_r_ffobk_cp_ud_dp_M31E4WC3JHSHFY4FGEN5" },
-  { src: bookQuietLawForest, title: "The Quiet Law of the Forest", alt: "The Quiet Law of the Forest Book Cover", buyUrl: "https://www.amazon.com.au/dp/B0G49HNKDP?ref=cm_sw_r_ffobk_cp_ud_dp_RM8JM1R19DGYY8W2ENXR&ref_=cm_sw_r_ffobk_cp_ud_dp_RM8JM1R19DGYY8W2ENXR&social_share=cm_sw_r_ffobk_cp_ud_dp_RM8JM1R19DGYY8W2ENXR&bestFormat=true" },
-  { src: bookHiddenSeasons, title: "The Hidden Seasons of Panya", alt: "The Hidden Seasons of Panya Book Cover", buyUrl: "https://www.amazon.com.au/dp/B0G5PCMPFB?ref=cm_sw_r_ffobk_cp_ud_dp_38XD4XWZ0H3RV83DMGKY&ref_=cm_sw_r_ffobk_cp_ud_dp_38XD4XWZ0H3RV83DMGKY&social_share=cm_sw_r_ffobk_cp_ud_dp_38XD4XWZ0H3RV83DMGKY&bestFormat=true" },
-  { src: bookQuietCourage, title: "The Quiet Courage of Panya", alt: "The Quiet Courage of Panya Book Cover" },
+  { src: bookQuietTales, title: "The Quiet Tales of Panya", alt: "The Quiet Tales of Panya Book Cover", buyUrl: "https://a.co/d/06jxg6Em" },
+  { src: bookQuietLawForest, title: "The Quiet Law of the Forest", alt: "The Quiet Law of the Forest Book Cover", buyUrl: "https://a.co/d/0eBRDlcV" },
+  { src: bookHiddenSeasons, title: "The Hidden Seasons of Panya", alt: "The Hidden Seasons of Panya Book Cover", buyUrl: "https://a.co/d/0dUARKQP" },
+  { src: bookQuietCourage, title: "The Quiet Courage of Panya", alt: "The Quiet Courage of Panya Book Cover", buyUrl: "https://a.co/d/07hopgU0" },
 ];
 
 const Gallery = () => {
