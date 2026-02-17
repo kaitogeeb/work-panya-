@@ -18,7 +18,7 @@ const ChildrensLibrary = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 items-center justify-center gap-8 md:gap-10 mb-12">
+        <div className="grid grid-cols-2 md:grid-cols-4 items-center justify-center gap-8 md:gap-10 mb-16 md:mb-20">
           <BookCard 
             image={bookQuietTales}
             size="large"
@@ -56,7 +56,7 @@ const ChildrensLibrary = () => {
         </div>
         
         <div className="text-center">
-          <Link to="/childrens-library" className="btn-primary-teal inline-block">
+          <Link to="/childrens-library" className="btn-primary-teal inline-block mt-6 md:mt-8">
             Explore Children's Books &gt;
           </Link>
       </div>

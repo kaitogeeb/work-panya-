@@ -33,7 +33,7 @@ const Gallery = () => {
             </p>
           </div>
 
-          <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
             {galleryItems.map((item, index) => {
               const content = (
                 <>
@@ -55,14 +55,14 @@ const Gallery = () => {
                   href={item.buyUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="break-inside-avoid relative group rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
+                  className="relative group rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 border border-sepia/10 bg-white"
                 >
                   {content}
                 </a>
               ) : (
                 <div
                   key={index}
-                  className="break-inside-avoid relative group rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
+                  className="relative group rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 border border-sepia/10 bg-white"
                 >
                   {content}
                 </div>
